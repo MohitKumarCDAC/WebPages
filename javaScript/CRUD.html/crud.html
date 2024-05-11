@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script1.js"></script>
+</head>
+<body onload="displaylist()">
+    <!-- <header id="headr">My First CRUD Operation</header> -->
+    <div class="maindiv">
+        <header id="headr"><b>My First CRUD Operation</b></header>
+        <form>
+            <div class="frmdiv">
+                <span id="txt">Enter Name:</span>&nbsp; &nbsp;<input type="text" name="name" id="name" placeholder="Enter Name">&nbsp;&nbsp;&nbsp;
+                <button type="button" name="btn" id="add" onclick="addname()">Add</button>&nbsp;&nbsp;&nbsp;
+                <button type="button" name="btn" id="delete" onclick="deletename()">Delete</button>&nbsp;&nbsp;&nbsp;
+                <button type="button" name="btn" id="search"onclick="searchname()">Search</button>
+                </div>
+        </form>
+        <div id="mydiv">
+            
+            </div>
+    </div>
+</body>
+</html>

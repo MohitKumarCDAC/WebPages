@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateCheckBox()
+        {
+            var count=0;
+            var ck=document.getElementsByName("technology");
+            for(var i=0; i<ck.length; i++)
+            {
+                if(ck[i].checked)
+                {
+                    count++;
+                }
+            }
+            if(count>=2)
+            {
+                document.getElementById("errcheckbox").innerHTML="";
+                return true;
+            }
+            else{
+                document.getElementById("errcheckbox").innerHTML="checked at list 2 checkbox ";
+                return false;
+            }
+
+        }
+    </script>
+</head>
+<body>
+        <form onsubmit="return validateCheckBox()">
+            <p> Technology</p>
+            <input type="checkbox" name="technology" id="java" value="java">
+            <label for="java">JAVA</label>
+            <input type="checkbox" name="technology" id="cpp" value="cpp">
+            <label for="cpp">cpp</label>
+            <input type="checkbox" name="technology" id="python" value="python">
+            <label for="python">Python</label>
+            <input type="checkbox" name="technology" id="r" value="r">
+            <label for="r">R</label><br>
+
+            <button type="submit" name="btn" id="btn" value="result">Result</button>
+            <p id="errcheckbox"></p>
+        
+            </form>
+
+</body>
+</html>

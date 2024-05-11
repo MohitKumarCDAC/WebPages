@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,"mohan",4.4,9,"sohan"];
+        document.write("<p>Array is:</p>"+arr);
+        var result=arr.indexOf(2);//this is find that 2 which index
+        document.write("<p>IndexOf number is</p>",result);
+        var f=arr.findIndex(a=>a>4);
+        document.write("<p>(check in group and resturn only one number position)findIndex number position is</p>"+f);
+        var fn=arr.find(a=>a>4)
+        document.write("<p>(check in group and return only one number)find number first occurance number</p>"+fn);
+        var fil=arr.filter(a=>a>4);
+        document.write("<p>filter given in group of data whose condition is true</p>"+fil);
+        arr.push("anjali");
+        document.write("<p>Array is:</p>"+arr);
+        </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showResult()
+        {
+        var str=document.getElementById("str").value;
+        var select=document.getElementById("operation");
+        var op=select.options[select.selectedIndex].value;
+        switch(op)
+        {
+            case "upper":
+            var result=str.toUpperCase();
+                break;
+            case "lower":
+                var result=str.toLowerCase();
+                break;
+            case "repeat":
+                var result=str.repeat(2);
+                break;
+            case "slice":
+                var first=parseInt(prompt("Enter Start Index"));
+                var last=parseInt(prompt("Enter Last Index"));
+                var result=str.slice(first,last);
+                break;
+            case "concat":
+                var str1=prompt("Enter String:");
+                var result=str.concat(" ",str1);
+                break;
+        }
+        document.getElementById("result").value=result;
+        }
+    </script>
+
+</head>
+<body>
+    <h1>String Functions</h1>
+    <div class="js">
+    <table>
+        <form class="myform">
+            <tr>
+                <td><lable for="str">Enter String:: &nbsp;</lable></td>
+                <td><input type="text" name="str" id="str" placeholder="Enter String"></td>
+                
+                </tr>
+            <tr>
+                <td><lable for="str">Your Result:: &nbsp;</lable></td>
+                <td><input type="text" name="result" id="result" placeholder="Result"></td>
+                    
+                </tr>
+            <tr>
+                <td><label>Function:</label>
+                    </td>
+                    <td>
+                        <select id="operation">
+                            <option value="upper">Upper</option>
+                            <option value="lower">Lower</option>
+                            <option value="match">Match</option>
+                            <option value="concat">Concat</option>
+                            <option value="repeat">Repeat</option>
+                            <option value="slice">Slice</option>
+                            <option value="replace">Replace</option>
+                            <option value="search">Search</option>
+
+                            </select>
+                        </td>
+                </tr>
+                <tr>
+                <td><button type="button" name="btn" id="btn" onclick="showResult()">Result</button>
+                    </td>
+                    </tr>
+            </form>
+        </table>
+</body>
+</html>
