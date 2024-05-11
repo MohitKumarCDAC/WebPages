@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Scheduler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset {
+            width: 300px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            padding: 5px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="date"], input[type="time"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Appointment Scheduler</h1>
+    
+    <form action="/submit_appointment" method="post">
+        <fieldset>
+            <legend>-Personal Information-</legend>
+            <label for="name">Name:<span style="color: red;">*</span></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="telephone">Telephone number:<span style="color: red;">*</span></label>
+            <input type="text" id="telephone" name="telephone" required>
+
+            <label for="email">E-mail address:<span style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">Date of birth:<span style="color: red;">*</span></label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>-Appointment Request-</legend>
+            <label for="reason">What is the reason for your visit?</label>
+            <textarea id="reason" name="reason" required></textarea>
+
+            <label for="pain_level">Current pain level (1-10):</label>
+            <input type="number" id="pain_level" name="pain_level" min="1" max="10" required>
+
+            <label for="preferred_date">Preferred date:<span style="color: red;">*</span></label>
+            <input type="date" id="preferred_date" name="preferred_date" required>
+
+            <label for="preferred_time">Preferred time:<span style="color: red;">*</span></label>
+            <input type="time" id="preferred_time" name="preferred_time" required>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>

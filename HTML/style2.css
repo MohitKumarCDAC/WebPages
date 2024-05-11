@@ -1,0 +1,85 @@
+.navig ul {
+  padding: 0;
+  background-color: #034928;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+li {
+  display: inline;
+  padding-right: 20px;
+}
+a {
+  font-size: 16px;
+  color: #fff;
+}
+span {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.rightalign {
+  text-align: right;
+  line-height: 0cm;
+}
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  color: aliceblue;
+  text-align: center;
+  width: 100%;
+  border-color: antiquewhite;
+}
+th {
+  border: 1px solid;
+  text-align: center;
+}
+#td1,
+#td2,
+#td3,
+#td4,
+#td5 {
+  border: 1px solid;
+  text-align: left;
+  color: black;
+}
+#td1 {
+  background-color: rgba(173, 173, 133, 0.986);
+}
+/* #td9
+{
+    text-align: left;
+} */
+.p1 {
+  text-align: left;
+}
+.left {
+  float: left;
+  width: 25%;
+}
+.tr1 {
+  background-color: #034928;
+}
+.d1 {
+  margin-left: 45px;
+
+  display: inline-block;
+  margin-top: 10px;
+  border: 2px solid;
+  margin-right: 5px;
+  margin-top: 18px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rebeccapurple;
+}
+#right-last {
+  color: black;
+  text-align: left;
+  padding-left: 10px;
+  border-collapse: collapse;
+}
+footer {
+  background-color: aquamarine;
+  color: white;
+  text-align: center;
+}

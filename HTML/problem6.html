@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Usage Survey</title>
+    <style>
+        .maincontainer {
+            border: 2px solid blue;
+            padding: 7px;
+        }
+
+        .left {
+            padding-left: 20px;
+            float: left;
+            width: 500px;
+            padding-top: 50px;
+            /* display: inline; */
+        }
+
+        .right {
+            width: 500px;
+            margin-left: 700px;
+            padding-top: 50px;
+            /* display: inline; */
+        }
+
+        #how {
+            
+            float: left;
+        }
+
+        .howd {
+            float: left;
+        }
+
+        .field {
+            float: left;
+        }
+
+        .name {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <h3>Internet Usage Survey</h3>
+        <p>
+            This survey is being conducted to help identify the Internet usage patterns of our customers.<br>
+            Please take a few moments to complete and submit this short form. Thank you for your cooperation.
+        </p>
+        <div class="left">
+            <p>
+                What type of Internet connection do you have?<br>
+                (Select One)
+            </p>
+        </div>
+        <div class="right">
+            <select name="connection" id="internetconn" size="4">
+                <option value="Dial-up">Dial-up</option>
+                <option value="DSL">DSL</option>
+                <option value="High Speed Cable">High Speed Cable</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="left">
+            <p>
+                What type of Computer do you use most at home?
+            </p>
+        </div>
+        <div class="right">
+            <input type="radio" id="desktop" name="computer" value="Desktop">
+            <label for="desktop">Desktop</label>
+            <input type="radio" id="laptop" name="computer" value="Laptop">
+            <label for="laptop">Laptop</label>
+        </div>
+        <div class="left">
+            <p>
+                How would you describe your main reason for using the Internet?
+            </p>
+        </div>
+        <div class="right">
+            <input type="radio" name="reason" id="work" value="work related">
+            <label for="work">To do work-related activities</label><br>
+            <input type="radio" name="reason" id="school" value="school related">
+            <label for="school">To do school-related activities</label><br>
+            <input type="radio" name="reason" id="entertain" value="entertainment">
+            <label for="entertain">For entertainment purposes</label><br>
+            <input type="radio" name="reason" id="other" value="other">
+            <label for="other">Other activities</label>
+        </div>
+        <div class="left">
+            <fieldset>
+                <legend>Types of sites visited</legend>
+                <p>
+                    What types of web sites do you access most often?
+                    Check all that apply.
+                </p>
+                <input type="checkbox" id="self" name="type1" value="selfimprovment">
+                <label for="self">Self Improvement</label><br>
+                <input type="checkbox" id="entertainment" name="type2" value="entertainment">
+                <label for="entertainment">Entertainment</label><br>
+                <input type="checkbox" id="news" name="type3" value="news">
+                <label for="news">News and Sports</label><br>
+                <input type="checkbox" id="ref" name="type4" value="reference">
+                <label for="ref">Reference</label><br>
+                <input type="checkbox" id="email" name="type5" value="email">
+                <label for="email">Email</label>
+            </fieldset>
+        </div>
+        <div class="right">
+            <fieldset>
+                <legend>Time spent using Internet</legend>
+                <p>During an average week, how long do you spend online?</p>
+                <input type="radio" id="0" name="time" value="0">
+                <label for="0">0-3 Hours</label><br>
+                <input type="radio" id="4" name="time" value="4">
+                <label for="4">4-6 Hours</label><br>
+                <input type="radio" id="7" name="time" value="7">
+                <label for="7">7-10 Hours</label><br>
+                <input type="radio" id="11" name="time" value="11">
+                <label for="11">11-14 Hours</label><br>
+                <input type="radio" id="15" name="time" value="15">
+                <label for="15">15+ Hours</label>
+            </fieldset>
+        </div>
+        <div class="left">
+            <p>Please comment on your opinions concerning Internet privacy and safety:</p>
+            <textarea name="opinions" id="opinions" rows="6" cols="100"></textarea>
+        </div>
+        <div class="left">
+            Fisrt Name : <input type="text" id="fname" name="fname" value="First Name">
+        </div>
+        <div class="right">
+            Last Name : <input type="text" id="lname" name="lname" value="Last Name">
+        </div>
+        <div class="left">
+            Age : <input type="number" id="age" name="age" value="age">
+        </div>
+        <div class="right">
+            Zip Code : <input type="text" id="zip" name="zip">
+        </div>
+        <div class="button">
+            <input type="button" value="Click to Submit">
+            <input type="button" value="Clear Form">
+        </div>
+    </div>
+</body>
+
+</html>

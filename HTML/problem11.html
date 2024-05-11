@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv{
+            border: 2px solid red;
+            background-color: #203b98;
+            width: 700px;
+            height: 420px;
+            display: inline-block;
+           
+
+        }
+        #field{
+            width: 500px;
+        }
+        .tb
+        {
+            color:white ;
+        }
+        input{
+            border: 3px outset;
+            border-style:groove;
+            width: 150px;
+            border-radius: 5px;
+        }
+        #btn
+        {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+         button{
+            border:2px outset rgb(227, 223, 219);
+            width: 80px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgba(86, 56, 239, 0.938);
+        }
+        #field
+        {
+            padding-top: 20px;
+            border: 3px solid;
+            border-color: rgba(86, 56, 239, 0.938);
+            border-radius: 10px;
+        }
+        #leg
+        {
+            color: wheat;
+            border: 2px;
+            border-style: outset;
+            border-color: #c7a51f;
+            font-size: 20px;
+            border-radius: 5px;
+
+        }
+        #extra{
+            border:2px outset rgba(86, 56, 239, 0.938);
+            border-radius: 5px;
+            font-size: 20px; 
+            font-style: oblique;
+            background-color: blue;
+        }
+        button:hover{
+            background-color: #c7a51f;
+        }
+       
+    </style>
+    <script>
+        function showPassword()
+        {
+            var passinput=document.getElementById("password");
+            if(passinput.type === "password")
+            {
+                passinput.type="text";
+            }
+            else{
+                passinput.type="password";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="mydiv">
+        <fieldset id="field">
+            <legend id="leg">Name And Address</legend>
+        <table class="tb">
+            <form class="form1">
+                    <tr>
+                        <td>
+                            <label for="ssn">SSN:<span style="color: red;">*</span></label></td>
+                        <td><input type="text" name="ssn" id="ssn" placeholder="SSN" required></td>
+                        <td><div id="extra">Fill Name and Address</div>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="fn">Full Name:<span style="color: red;">*</span></label></td>
+                            
+                            <td><input type="text" name="fn" id="fn" placeholder="Full Name" required></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="sn">Street and Number:<span style="color: red;">*</span></label></td>
+                                
+                                <td><input type="text" name="sn" id="sn" placeholder="Street and Number" required></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="pc">Postal Code:<span style="color: red;">*</span></label></td>
+                                
+                                    <td><input type="text" name="pc" id="pc" placeholder="Postal Code" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="city">City:<span style="color: red;">*</span></label></td>
+                                        
+                                        <td><input type="text" name="city" id="city" placeholder="city" required></td>
+                                     </tr>
+                                </form>
+                            </table>
+                           
+                </fieldset>
+                <br>
+                <fieldset id="field"><span style="color: red;">*</span>
+                    <legend id="leg">UserName And Password</legend>
+                    <table class="tb">
+                        <form>
+                            <tr>
+                                <td><label for="uname">UserName:<span style="color: red;">*</span></label></td>
+                                <td><input type="text" name="uname" id="uname" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="password">Password<span style="color: red;">*</span></label></td>
+                                    <td><input type="password" name="password" id="password" maxlength="8"></td>
+                    
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="checkbox" name="cbox" id="spass" value="spass" onclick="showPassword()">show password
+                                            </td>
+                                        </tr> 
+
+                            </form>
+                        </table>
+                       
+                    </fieldset>
+                    
+                    <button type="submit" name="btn" id="btn">Register</button>
+                    
+                
+         
+    </div>
+</body>
+</html>

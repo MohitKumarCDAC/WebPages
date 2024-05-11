@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Registration Form</title>
+  <style>
+    fieldset {
+      background-color: rgb(56, 104, 162);
+      color: white;
+      padding: 10px;
+    }
+
+    .form-container {
+      background-color: rgb(56, 104, 162);
+      width: 520px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form-container">
+    <fieldset>
+      <legend>Registration Details</legend>
+      <table>
+        <tr>
+          <td><label for="university">University:</label></td>
+          <td><input type="text" id="university" name="university"></td>
+        </tr>
+        <tr>
+          <td><label for="institute">Institute:</label></td>
+          <td><input type="text" id="institute" name="institute"></td>
+        </tr>
+        <tr>
+          <td><label for="branch">Branch:</label></td>
+          <td>
+            <select id="branch" name="branch">
+              <option value="">--select--</option>
+              <option value="computer-science">Computer Science</option>
+              <option value="electrical-engineering">Electrical Engineering</option>
+              <option value="mechanical-engineering">Mechanical Engineering</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="degree">Degree:</label></td>
+          <td>
+            <select id="degree" name="degree">
+              <option value="">--select--</option>
+              <option value="bachelor">Bachelor</option>
+              <option value="master">Master</option>
+              <option value="doctorate">Doctorate</option>
+            </select>
+            <input type="radio" name="degree" id="Pursuing" value="BE">
+            <label for="Persuing">Persuing</label>
+            <input type="radio" name="degree" id="Completed" value="phd">
+            <label for="Completed">Completed</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="cpi">Average CPI:</label></td>
+          <td><input type="number" id="cpi" name="cpi" min="1" max="10">
+            <label for="upto">Upto</label>
+            <input type="number" id="upto" name="upto" min="1" max="8">Th Semester</td>
+        </tr>
+        <tr>
+          <td><label for="experience">Experience:</label></td>
+          <td><input type="number" id="experience" name="experience" min="1" max="50">Years</td>
+        </tr>
+        <tr>
+          <td><label for="website">Your Website Or Blog:</label></td>
+          <td><input type="url" id="website" name="website" value="http://"></td>
+        </tr>
+      </table>
+    </fieldset>
+  </div>
+  <div class="button-container">
+    <button id="previousButton">Previous</button>
+    Step2  <button id="nextButton">Next</button>
+  </div>
+  
+</body>
+
+</html>

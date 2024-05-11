@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 5</title>
+    <style>
+        .mydiv{
+ margin-left: 30%;
+ margin-top: 30px;
+}
+#mytable
+{
+   width: 50%;
+   background-color: pink;
+
+}
+td{
+    border: 2px solid black;
+    
+}
+        </style>
+</head>
+<body>
+    <div class="mydiv">
+        <table id="mytable">
+            <form class="myform">
+            <tbody>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="txt1" id="txt1" required placeholder="Enter Your Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Employee Code:</td>
+                            <td><input type="text" name="txt2" id="txt2" size="6"></td>
+                        </tr>
+                        <tr>
+                            <td>Department:</td>
+                                <td>
+                                    
+                                <input type="radio" name="Department" id="admin" value="Admin">
+                                <label for="admin">Admin</label><br>
+                                <input type="radio" name="Department" id="hr" value="Hr">
+                                <label for="hr">HR</label><br>
+                                <input type="radio" name="Department" id="technical" value="Technical">
+                                <label for="technical">Technical</label><br>
+                                <input type="radio" name="Department" id="account" value="Account">
+                                <label for="account">Account</label>
+                                
+                            </td>
+                            </tr>
+
+                            <tr>
+                                <td>Date of Joining:</td>
+                                    <td>
+                                        <input type="text" name="dd" id="dd" size="3">(DD)/
+                                        <input type="text" name="mm" id="mm" size="3">(MM)/
+                                        <input type="text" name="YY" id="YY" size="3">(YY)/
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Address:</td>
+                                        <td><textarea name="add" id="add" rows="4" cols="40"></textarea>   
+                                        </td>    
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Training Program Attended:</td>
+                                            <td>
+                                                <div class="mycheck">
+                                                    <input type="checkbox" name="check1" id="check1" value="html">
+                                                    <labe for="check1">Html/Dhtml</label><br>
+                                                    <input type="checkbox" name="check2" id="check2" value="java">
+                                                    <label for="check2">Java</label><br>
+                                                    <input type="checkbox" name="check3" id="check3" value="server">
+                                                    <label for="check3">Client/Server</label><br>
+                                                    <input type="checkbox" name="check4" id="check4" value="html">
+                                                    <label for="check4">.Net</label><br>
+                                                    
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Training Program need to Attend:</td>
+                                            <td>
+                                                <select id="ta" name="td" size="3">
+                                                <option value="test">---select one----</option>
+                                                <option value="java">Java</option>
+                                                <option value="python">python</option>
+                                                <option value="cpp">Cpp</option>
+                                                <option value="mysql">Mysql</option>
+                                                <option value="javaScript">Java Script</option>
+                                                    
+                                                    </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Send Information at</td>
+                                                <td><a href="empinfo@patni.com">empinfo@patni.com</td>
+                                            </tr>
+                </tbody>
+            </form>
+        </table>
+        
+    </div>
+</body>
+</html>

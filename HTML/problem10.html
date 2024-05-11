@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 10</title>
+    <style>
+        .first
+        {
+            border: 3px solid black;
+            width:400px;
+            margin-left: 35%;
+            margin-top: 5%;
+            
+        }
+        h1{
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="first">
+        <h1>Appointment Schedular</h1>
+        <fieldset style="width:200px;">
+            <legend id="l1">Personal Information</legend>
+            <lable for="nm">Name<span style="color: red;">*</span></lable><br>
+            <input type="text" id="nm" name="nm" placeholder="Enter Name" required><br><br>
+
+            <lable for="tn">Telephone Number<span style="color: red;">*</span></lable><br>
+            <input type="text" id="tn" name="tn" placeholder="Enter Number" required><br><br>
+            
+            <lable for="nm">Email<span style="color: red;">*</span></lable><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+            <lable for="nm">Date<span style="color: red;">*</span></lable><br>
+            <input type="date" id="date" name="date" placeholder="Date"><br><br>
+            
+            </fieldset>
+            <fieldset style="width:200px;">
+                <legend id="l1">Appointment Request</legend>
+                
+                <lable for="nm">What is the reason for your visit</lable><br>
+            <input type="text" id="reason" name="nm" placeholder="Enter your reason"><br><br>
+            <lable for="level">Current pain level</lable><br>
+            <input type="range" id="level" name="level"><br>
+
+            <lable for="date">Preferred date</lable><br>
+            <input type="date" id="reason" name="date" placeholder="Date"><br><br>
+
+            <lable for="nm">Preferred Time</lable><br>
+            <input type="time" id="pt" name="pt"><br>
+        </fieldset>
+
+        <button type="button" id="btn" name="btn" value="submit" style="margin-left: 10px;">Submit</button>
+        </div>
+</body>
+</html>
