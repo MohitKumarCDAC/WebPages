@@ -1,0 +1,50 @@
+/* BookList.css */
+
+.book-list-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .book-list-title {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .book-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .book-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  
+  .book-details {
+    flex: 1;
+    color: #555;
+  }
+  
+  .book-delete-button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .book-delete-button:hover {
+    background-color: #c9302c;
+  }
+  
